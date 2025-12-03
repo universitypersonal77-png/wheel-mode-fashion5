@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>INNER RUNWAY – Fashion Board</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #222 0, #050505 55%, #000 100%);
+      color: #f5f5f5;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Helvetica Neue", sans-serif;
+    }
+
+    /* --- ヘッダー --- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.85);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .site-header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo-block {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .logo-main {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .logo-tagline {
+      font-size: 11px;
+      opacity: 0.7;
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.8;
+    }
+
+    .header-pill {
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 4px 10px;
+      font-size: 11px;
+      opacity: 0.85;
+    }
+
+    /* --- メイン / ギャラリー --- */
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 16px 80px;
+    }
+
+    .hero {
+      margin-bottom: 32px;
+    }
+
+    .hero-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.6;
+      margin-bottom: 6px;
+    }
+
+    .hero-title {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .card {
+      margin-bottom: 40px;
+    }
+
+    .frame {
+      background: linear-gradient(135deg, #111, #050505);
+      padding: 10px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+      transition: transform 0.2s ease, box-shadow 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .frame img {
+      display: block;
+      max-width: 65%;   /* 写真の大きさ（60〜70の間で調整可） */
+      height: auto;
+      margin: 12px auto;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .frame:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.9);
+      background: linear-gradient(135deg, #181818, #050505);
+    }
+
+    @media (max-width: 768px) {
+      .frame img {
+        max-width: 82%;
+      }
+      .site-header-inner {
+        padding-inline: 12px;
+      }
+      .hero-title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="logo-block">
+        <div class="logo-main">INNER RUNWAY</div>
+        <div class="logo-tagline">private fashion archive</div>
+      </div>
+      <div class="header-nav">
+        <span class="header-pill">LOOKS</span>
+        <span>MOOD</span>
+        <span>DETAILS</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- メイン -->
+  <main class="wrapper">
+    <section class="hero">
+      <div class="hero-label">scene reference</div>
+      <h1 class="hero-title">runway in the browser</h1>
+      <!-- 説明テキストは削除 -->
+    </section>
+
+    <!-- ▼▼ ここから下が画像たち ▼▼ -->
+
+    <!-- 1枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img01.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 2枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img02.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 3枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img03.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 4枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img04.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 5枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img05.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 6枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img06.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 7枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img07.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 8枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img08.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 9枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img09.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 10枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img10.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 11枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img11.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 12枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img12.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 13枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img13.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 14枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img14.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 15枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img15.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 16枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img16.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 17枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img17.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 18枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img18.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 19枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img19.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 20枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img20.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 21枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img21.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 22枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img22.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 23枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img23.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 24枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img24.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 25枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img25.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 26枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img26.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 27枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img27.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 28枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img28.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 29枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img29.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 30枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img30.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 31枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img31.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 32枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img32.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 33枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img33.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 34枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img34.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 35枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img35.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 36枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img36.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 37枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img37.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 38枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img38.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 39枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img39.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 40枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img40.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 41枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img41.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- 42枚目 -->
+    <div class="card">
+      <div class="frame">
+        <img src="img42.jpg" alt="">
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
